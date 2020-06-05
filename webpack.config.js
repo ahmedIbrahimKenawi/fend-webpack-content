@@ -9,7 +9,11 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_mdules/,
         loader: 'babel-loader'
-      }
+      },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        loader: 'file-loader'
+      },
     ]
   }
 }
